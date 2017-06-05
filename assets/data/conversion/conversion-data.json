@@ -1,0 +1,74 @@
+﻿[
+  {
+    "meta": {
+      "dataType": "Temperature",
+      "relativeTo": "Celsius"
+    },
+    "conversions": [
+      {
+        "name": "Celsius",
+        "relativePower": {
+          "base": 0,
+          "multiplier": 1
+        },
+        "suffix": "°C"
+      },
+      {
+        "name": "Fahrenheit",
+        "relativePower": {
+          "base": 32,
+          "multiplier": 1.8
+        },
+        "suffix": "°F"
+      }
+    ]
+  },
+  {
+    "meta": {
+      "dataType": "Distance",
+      "relativeTo": "Meter"
+    },
+    "conversions": [
+      {
+        "name": "Milimeter",
+        "relativePower": {
+          "base": 0,
+          "multiplier": 0.001
+        },
+        "suffix": "mm"
+      },
+      {
+        "name": "Centimeter",
+        "relativePower": {
+          "base": 0,
+          "relativePower": 0.01
+        },
+        "suffix": "cm"
+      },
+      {
+        "name": "Meter",
+        "relativePower": {
+          "base": 0,
+          "multiplier": 1
+        },
+        "suffix": "m"
+      },
+      {
+        "name": "Decameter",
+        "relativePower": {
+          "base": 0,
+          "multiplier": 10
+        },
+        "suffix": "dm"
+      },
+      {
+        "name": "Kilometer",
+        "relativePower": {
+          "base": 0,
+          "multiplier": 1000
+        },
+        "suffix": "km"
+      }
+    ]
+  }
+]

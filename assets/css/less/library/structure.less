@@ -1,0 +1,151 @@
+﻿@import "variables.less";
+@import "mixins.less";
+@import "utilities.less";
+
+@import "../bootstrap/mixins.less";
+@import "../bootstrap/variables.less";
+
+.main{
+  overflow-x: hidden;
+}
+
+.main-content{
+    margin-top: 50px;
+}
+
+aside{
+    float: right !important;
+}
+
+.content-row-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: @screen-sm){
+    .row-img{
+        width: 40%;
+    }
+    .row-img-caption{
+      width: 60%;
+    }
+}
+
+.row-img {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row-img-caption {
+  float: right;
+  display: flex;
+  align-items: center;
+
+  p {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.content-row {
+    min-height: 40px;
+    padding: 20px;
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.6em;
+    }
+    margin: 0px;
+}
+
+.content-separator{
+    min-height: @content-filler-height;
+}
+
+@media (max-width: @screen-xs){
+    .content-row {
+        padding: 10px;
+
+        h2 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+    }
+}
+
+.content-row-primary {
+    background-color: @color-light-blue;
+}
+
+.content-row-secondary {
+    background-color: @color-light-orange;
+}
+
+.image-content {
+    .make-image-widget(white, 0.85);
+}
+
+@media (max-width: @screen-sm){
+    .image-content{
+        padding: 10px;
+    }
+}
+
+@media (min-width: @screen-sm){
+    h2{
+        font-size: 2.5em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+}
+
+.image-content-primary {
+    background-color: @color-light-blue;
+    color: @image-content-text;
+
+    a {
+        color: @color-light-orange;
+    }
+}
+
+.image-content-secondary {
+    background-color: @color-light-orange;
+    color: @image-content-text;
+
+    a {
+        color: @color-light-blue;
+    }
+}
+
+.logo-title-text-container{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.logo-title-text{
+    text-align: center;
+    font-size: 5em;
+    color: lighten(black, 20);
+}
+
+@media (max-width: @screen-md){
+    .logo-title-text{
+        font-size: 4em;
+    }
+}
+
+@media (max-width: @screen-xs){
+    .logo-title-text{
+        font-size: 3em;
+    }
+}

@@ -1,0 +1,30 @@
+﻿@import "variables.less";
+@import "mixins.less";
+
+// sticky footer
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+  margin-bottom: @footer-fixed-height;
+}
+
+footer {
+    border-top: @border-medium;
+    background-color: @color-light-blue;
+
+    // sticky footer
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    height: @footer-fixed-height;
+}
+
+.footer-copyright{
+  padding: 10px;
+  border-top: 1px solid black;
+}
