@@ -5,19 +5,25 @@ html {
   min-height: 100%;
 }
 body {
-  margin-bottom: 110px;
+  margin-bottom: 420px;
 }
 footer {
-  border-top: 10px solid #5ea1db;
-  background-color: #b1d2ee;
+  background-color: rgba(244, 67, 54, 0.2);
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 110px;
+  height: 420px;
 }
 .footer-copyright {
-  padding: 10px;
-  border-top: 1px solid black;
+  border-top: 4px solid rgba(0, 150, 136, 0.7);
+  background-color: rgba(244, 67, 54, 0.7);
+  padding: 20px;
+}
+.footer-copyright hr {
+  background-color: black;
+}
+.footer-body {
+  padding: 30px;
 }
 .down-arrow {
   position: absolute;
@@ -47,6 +53,7 @@ footer {
 }
 .main-content {
   margin-top: 50px;
+  min-height: 800px;
 }
 aside {
   float: right !important;
@@ -103,14 +110,14 @@ aside {
   }
 }
 .content-row-primary {
-  background-color: #b1d2ee;
+  background-color: rgba(244, 67, 54, 0.2);
 }
 .content-row-secondary {
-  background-color: #ff835d;
+  background-color: rgba(0, 150, 136, 0.7);
 }
 .image-content {
   color: white;
-  opacity: 0.85;
+  opacity: 0.9;
   padding: 20px;
   margin: 30px;
   display: inline-block;
@@ -130,18 +137,12 @@ aside {
   }
 }
 .image-content-primary {
-  background-color: #b1d2ee;
+  background-color: rgba(244, 67, 54, 0.2);
   color: black;
-}
-.image-content-primary a {
-  color: #ff835d;
 }
 .image-content-secondary {
-  background-color: #ff835d;
+  background-color: rgba(0, 150, 136, 0.7);
   color: black;
-}
-.image-content-secondary a {
-  color: #b1d2ee;
 }
 .logo-title-text-container {
   position: absolute;
@@ -163,12 +164,6 @@ aside {
   .logo-title-text {
     font-size: 3em;
   }
-}
-.background-blue {
-  background-color: #b1d2ee;
-}
-.background-orange {
-  background-color: #ff835d;
 }
 .flex-center {
   align-items: center;
@@ -194,12 +189,16 @@ aside {
   justify-content: center;
   align-items: center;
 }
+.small-box-shadow {
+  box-shadow: black 5px 5px 20px -5px;
+}
 body {
   font-family: 'Raleway', sans-serif;
 }
 /* Components */
 chart {
   display: block;
+  box-shadow: black 5px 5px 20px -5px;
 }
 .loading-page-widget {
   position: fixed;
@@ -212,12 +211,11 @@ chart {
   height: 198px;
 }
 .loading-widget-chart {
-  position: absolute;
+  background-image: url(../img/loaders/loading-chart.gif);
+  width: 200px;
+  height: 200px;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
-  margin: 0px auto;
-  background-image: url(../img/loaders/loading-chart.gif);
-  width: 198px;
-  height: 198px;
 }
