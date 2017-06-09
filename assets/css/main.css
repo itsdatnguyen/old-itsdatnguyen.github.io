@@ -198,6 +198,9 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 /* Components */
+chart {
+  display: block;
+}
 .loading-page-widget {
   position: fixed;
   left: 50%;
@@ -205,6 +208,16 @@ body {
   transform: translateX(-50%);
   margin: 0px auto;
   background-image: url(../img/loaders/loadingicon.gif);
+  width: 198px;
+  height: 198px;
+}
+.loading-widget-chart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0px auto;
+  background-image: url(../img/loaders/loading-chart.gif);
   width: 198px;
   height: 198px;
 }
