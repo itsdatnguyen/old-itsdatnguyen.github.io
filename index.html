@@ -6,8 +6,41 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link href="styles.49f5574991be08dc33c3.bundle.css" rel="stylesheet"/></head>
+  <style>
+    .loading {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      transition-delay: 1.5s;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      pointer-events: none;
+      background: #c2e59c; 
+      background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c); 
+      background: linear-gradient(to right, #64b3f4, #c2e59c);
+    }
+    app-root:empty + .loading {
+      opacity: 1;
+      z-index: 9999;
+      background: #c2e59c;
+      background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+      background: linear-gradient(to right, #64b3f4, #c2e59c); 
+    }
+    .app-load-widget{
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+<link href="styles.81476e5d25b325d98d77.bundle.css" rel="stylesheet"/></head>
 <body>
-  <app-root>Loading...</app-root>
-<script type="text/javascript" src="inline.2f9bc5ece5addae3650b.bundle.js"></script><script type="text/javascript" src="polyfills.456a9bac641ef5f0139a.bundle.js"></script><script type="text/javascript" src="scripts.3542e14d53a1091f911f.bundle.js"></script><script type="text/javascript" src="vendor.3c0beecccc07b1a79c02.bundle.js"></script><script type="text/javascript" src="main.1f602eaa5fe0c6f60d68.bundle.js"></script></body>
+  <app-root></app-root>
+  <div class="loading">
+    <img class="app-load-widget" src="assets/img/loaders/loading-chart.gif" title="Loading" alt="loading chart"/>
+  </div>
+<script type="text/javascript" src="inline.f69c0689cb04b023edfc.bundle.js"></script><script type="text/javascript" src="polyfills.456a9bac641ef5f0139a.bundle.js"></script><script type="text/javascript" src="scripts.3542e14d53a1091f911f.bundle.js"></script><script type="text/javascript" src="vendor.3c0beecccc07b1a79c02.bundle.js"></script><script type="text/javascript" src="main.4c8a421fa0705cd7c377.bundle.js"></script></body>
 </html>

@@ -213,16 +213,6 @@ chart {
   display: block;
   box-shadow: black 5px 5px 20px -5px;
 }
-.loading-page-widget {
-  position: fixed;
-  left: 50%;
-  top: 40%;
-  transform: translateX(-50%);
-  margin: 0px auto;
-  background-image: url(../img/loaders/loadingicon.gif);
-  width: 198px;
-  height: 198px;
-}
 .loading-widget-chart {
   background-image: url(../img/loaders/loading-chart.gif);
   width: 200px;
@@ -231,5 +221,5 @@ chart {
   top: 50%;
   left: 50%;
   z-index: 1000;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
