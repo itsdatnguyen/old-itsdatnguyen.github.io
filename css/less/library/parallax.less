@@ -1,0 +1,16 @@
+﻿@import "variables.less";
+@import "mixins.less";
+@import "utilities.less";
+
+@import "../bootstrap/variables.less";
+
+.parallax-image {
+    .fill-screen();
+    background-attachment: fixed;   
+}
+
+@media (max-width: @screen-lg) {
+    .parallax-image{
+        background-attachment: scroll;
+    }    
+}
