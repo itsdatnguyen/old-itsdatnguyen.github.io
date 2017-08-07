@@ -1,4 +1,4 @@
-﻿/* Bootstrap */
+/* Bootstrap */
 /* Library */
 footer {
   padding: 20px;
@@ -39,6 +39,9 @@ footer {
 }
 .scroll-down:hover {
   color: #ff835d;
+}
+.navigation-link {
+  font-size: 1em !important;
 }
 .parallax-image {
   background-size: cover;
@@ -186,6 +189,17 @@ aside {
 .float-left {
   float: left;
 }
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
 /* Components */
 .loading-page-widget {
   position: fixed;
@@ -196,4 +210,16 @@ aside {
   background-image: url(../img/loading-icon.gif);
   width: 198px;
   height: 198px;
+}
+.privacy-content {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.about-content {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.face-logo {
+  box-shadow: 3px 3px 20px 0px;
+  width: 256px;
 }
