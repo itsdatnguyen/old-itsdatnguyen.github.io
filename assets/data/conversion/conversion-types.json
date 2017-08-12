@@ -1,0 +1,74 @@
+﻿[
+  {
+    "name": "Length",
+    "type": "length"
+  },
+  {
+    "name": "Area",
+    "type": "area"
+  },
+  {
+    "name": "Mass",
+    "type": "mass"
+  },
+  {
+    "name": "Volume",
+    "type": "volume"
+  },
+  {
+    "name": "Volume Flow Rate",
+    "type": "volumeFlowRate"
+  },
+  {
+    "name": "Temperature",
+    "type": "temperature"
+  },
+  {
+    "name": "Time",
+    "type": "time"
+  },
+  {
+    "name": "Speed",
+    "type": "speed"
+  },
+  {
+    "name": "Pressure",
+    "type": "pressure"
+  },
+  {
+    "name": "Digital",
+    "type": "digital"
+  },
+  {
+    "name": "Parts Per",
+    "type": "partsPer"
+  },
+  {
+    "name": "Voltage",
+    "type": "voltage"
+  },
+  {
+    "name": "Current",
+    "type": "current"
+  },
+  {
+    "name": "Power",
+    "type": "power"
+  },
+  {
+    "name": "Apparent Power",
+    "type": "apparentPower"
+  },
+  {
+    "name": "Reactive Power",
+    "type": "reactivePower"
+  },
+  {
+    "name": "Energy",
+    "type": "energy"
+  },
+  {
+    "name": "Reactive Energy",
+    "type": "reactiveEnergy"
+  }
+]
