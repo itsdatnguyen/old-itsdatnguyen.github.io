@@ -12,7 +12,6 @@
     var lgBreakpoint = 1200;
 
     var parallaxImageSelector = ".parallax-image";
-    var mainContentSelector = ".main-content";
 
     window.mobileAndTabletcheck = function () {
         var check = false;
@@ -40,11 +39,6 @@
     }
 
     $(window).load(function () {
-        // remove loading widget and successfully reveal loaded content
-        $(".loading-page-widget").remove();
-        $(mainContentSelector).removeClass("loading");
-        $(mainContentSelector).addClass("loaded");
-
         updateParallax();
 
         // nav scrollspy

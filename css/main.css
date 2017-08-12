@@ -41,7 +41,7 @@ footer {
   color: #ff835d;
 }
 .navigation-link {
-  font-size: 1em !important;
+  font-size: 1.3em !important;
 }
 .parallax-image {
   background-size: cover;
@@ -67,10 +67,6 @@ aside {
   aside {
     float: none;
   }
-}
-.main-content {
-  transition: opacity 1.5s;
-  overflow-x: hidden;
 }
 .loading {
   opacity: 0;
@@ -211,11 +207,7 @@ aside {
   width: 198px;
   height: 198px;
 }
-.privacy-content {
-  padding-top: 120px;
-  padding-bottom: 60px;
-}
-.about-content {
+.text-content {
   padding-top: 120px;
   padding-bottom: 60px;
 }
