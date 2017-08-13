@@ -1,0 +1,22 @@
+﻿.centered-image(@url, @width, @height) {
+    margin: 0px auto;
+    background-image: @url;
+    width: @width;
+    height: @height;
+}
+
+.centered-image-square(@url, @length) {
+    margin: 0px auto;
+    background-image: @url;
+    width: @length;
+    height: @length;
+}
+
+.make-image-widget(@color, @opacity) {
+    margin: 30px;
+    padding: 20px;
+    color: @color;
+    opacity: @opacity;
+    display: inline-block;
+    box-shadow: black 5px 5px 20px -5px;   
+}
