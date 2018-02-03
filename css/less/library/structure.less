@@ -10,12 +10,12 @@ body {
 }
 
 aside{
-    float: right;
+    float: none;
 }
 
-@media (max-width: @screen-md){
+@media (min-width: @screen-md){
     aside{
-        float: none;
+        float: right;
     }
 }
 
@@ -31,30 +31,37 @@ aside{
 }
 
 .content-row {
-    min-height: @content-filler-height;
-    padding: 30px;
+    min-height: @content-filler-height; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 
     h2 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     p {
-        font-size: 1.6em;
+        font-size: 1.1em;
     }
 
-    .make-row();
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
 
-@media (max-width: @screen-xs){
+@media (min-width: @screen-xs){
     .content-row {
-        padding: 10px;
+        padding: 30px;
 
         h2 {
-            font-size: 2em;
+            font-size: 2.5em;
+            margin-top: 10px;
+            margin-bottom: 20px;   
         }
 
         p {
-            font-size: 1.1em;
+            font-size: 1.6em;
         }
     }
 }
@@ -67,32 +74,72 @@ aside{
     background-color: @color-light-orange;
 }
 
-.image-content-title {
+.repo-title-container {
     .make-image-widget(black, 0.8);
     .image-content-primary();
+    
+    .repo-title-text {
+        font-size: 2em;
+    }
+}
 
+@media (min-width: @screen-xs){
+    .repo-title-container {
+        .repo-title-text {
+            font-size: 2.5em;
+        }
+    }
+}
+
+@media (min-width: @screen-sm){
+    .repo-title-container {
+        padding: 30px;
+        .repo-title-text {
+            font-size: 3em;
+        }
+    }
+}
+
+@media (min-width: @screen-md){
+    .repo-title-container {
+        padding: 40px;
+        .repo-title-text {
+            font-size: 4em;
+        }
+    }
 }
 
 .image-content {
     .make-image-widget(white, 0.85);
     opacity: 0.85;
+    padding: 10px;
+
     hr{
         background-color: black;
     }
-}
 
-@media (max-width: @screen-sm){
-    .image-content{
-        padding: 10px;
+    h2 {
+        font-size: 1.8em;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+     
+    p {
+        font-size: 1.2em;
     }
 }
 
 @media (min-width: @screen-sm){
-    h2{
-        font-size: 2.5em;
-    }
-    p{
-        font-size: 1.5em;
+    .image-content{
+        padding: 20px;
+
+        h2 {
+            font-size: 2.6em;
+        }
+         
+        p {
+            font-size: 1.5em;
+        }
     }
 }
 
@@ -112,4 +159,26 @@ aside{
     a {
         color: @color-light-blue;
     }
+}
+
+.about {
+    h2 {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: @screen-sm){
+    .about {
+        h2 {
+            font-size: 2.6em;
+        }
+
+        p {
+            font-size: 1.4em;
+        }
+    }  
 }
